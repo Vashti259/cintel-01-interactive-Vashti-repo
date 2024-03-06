@@ -1,8 +1,8 @@
-cintel-01-interactive-Vashti-repo
-Name: Vashti Gambol
-Date: March 7th,2024
+## cintel-01-interactive-Vashti-repo
+## Name: Vashti Gambol
+## Date: March 7th,2024
 
-#Overview
+# Overview
 Professional Analytics - Level 1 Professional Analytics
 
 Contents Data Analytics Analytics Data Cleaning Analytics Data Analytics Statistics Basics Git and GitHub Git Basics GitHub Basics GitHub Repositories GitHub: Adding a File GitHub Pages Python Python Basics Python Collections Python Datasets Python Execution Python File I/O Python Functions Python Modules and Packages Python Project Organization Python Type Hints Python Standard Library Standard Library Overview Python Environment Setup Environment Setup: Jupyter Environment Setup: Virtual Environments Python External Libraries Library: Pandas and Polars Library: Pandas and NumPy Library: Matplotlib Library: Seaborn SQL SQL and Python Integration Development Tools Development Tools: Linters and Formatters Development Editor: VS Code Visual Studio Code Managing This Repository Before installing the linting tools, install Node.js on your system. Download it from the official Node.js website.
