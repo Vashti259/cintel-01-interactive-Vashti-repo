@@ -1,8 +1,8 @@
-##  Project Overview
-# Project Name: Cintel-01-interactive 
-# Name: Vashti Gambol 
-# Date: March 7th,2024 
-# Vashti's Website 
+#  Project Overview
+## Project Name: Cintel-01-interactive 
+## Name: Vashti Gambol 
+## Date: March 7th,2024 
+## Vashti's Website 
 This project is where all my files will be kept. Python Packages will be installed.
 PyShiny and the necessary tools for its function will be integrated into the project.
 Information will be available as the project progresses.
