@@ -1,5 +1,6 @@
 ##  Project Overview
- Project Name: Cintel-01-interactive  Name: Vashti Gambol 
+ Project Name: Cintel-01-interactive 
+ Name: Vashti Gambol 
  DateMarch 7th,2024 
  Vashti's Website 
 This project is where all my files will be kept. Python Packages will be installed.
