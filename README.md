@@ -1,4 +1,4 @@
-# Project 1: Cintel-01-interactive-Vashti-repo
+# Project 1: Cintel-01-interactive
   Name: Vashti Gambol 
   DateMarch 7th,2024 
 # Vashti's Website 
