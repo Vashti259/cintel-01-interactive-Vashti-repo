@@ -1,24 +1,14 @@
-# Vashti's Website 
+import plotly.express as px
+from shiny.express import input, ui
+from shinywidgets import render_plotly
 
-My first website using Markdown and GitHub Pages.
+ui.page_opts(title="Filling layout", fillable=True)
+with ui.layout_columns():
 
-## Links (Two hashes is a second level heading)
+    @render_plotly
+    def plot1():
+        return px.histogram(px.data.tips(), y="tip")
 
-Here's a clickable link: [My favorite AI assistant ] (https://www.microsoft.com> bing-chat)
-
-## Images
-
-Images look like links except with an exclamation directly in front
-
-![My Shiny Image](https://raw.githubusercontent.com/denisecase/pyshiny-penguins-dashboard-express/main/images/LocalAppRunning.JPG)
-
-## Reminders
-
-Use a dash space for unordered lists
-
-- Spaces matter
-
-- Spelling matters
-
-- Capitalization matters
-  
+    @render_plotly
+    def plot2():
+        return px.histogram(px.data.tips(), y="total_bill")
