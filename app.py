@@ -1,14 +1,18 @@
-import plotly.express as px
-from shiny.express import input, ui
+from shiny.express import input, render, ui
 from shinywidgets import render_plotly
 
-ui.page_opts(title="Filling layout", fillable=True)
-with ui.layout_columns():
+ui.page_opts(title="Penguins dashboard", fillable=True)
 
-    @render_plotly
-    def plot1():
-        return px.histogram(px.data.tips(), y="tip")
+with ui.sidebar():
+    ui.input_selectize(
+        "var", "Select variable",
+        ["bill_length_mm", "bill_depth_mm", "flipper_length_mm", "body_mass_g", "year"]
+    )
+    ui.input_numeric("bins", "Number of bins", 30)
 
+with ui.card(full_screen=True):
     @render_plotly
-    def plot2():
-        return px.histogram(px.data.tips(), y="total_bill")
+    def hist():
+        import plotly.express as px
+        from palmerpenguins import load_penguins
+        return px.histogram(load_penguins(), x=input.var(), nbins=input.bins())
