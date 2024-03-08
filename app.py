@@ -1,17 +1,14 @@
+import plotly.express as px
 from shiny.express import input, ui
-from shinywidgets import render_altair
+from shinywidgets import render_plotly
 
-ui.input_selectize("var", "Select variable", choices=["bill_length_mm", "body_mass_g"])
+ui.page_opts(title="Vashti's App", fillable=True)
+with ui.layout_columns():
 
+    @render_plotly
+    def plot1():
+        return px.histogram(px.data.tips(), y="tip")
 
-@render_altair
-def hist():
-    import altair as alt
-    from palmerpenguins import load_penguins
-
-    df = load_penguins()
-    return (
-        alt.Chart(df)
-        .mark_bar()
-        .encode(x=alt.X(f"{input.var()}:Q", bin=True), y="count()")
-    )
+    @render_plotly
+    def plot2():
+        return px.histogram(px.data.tips(), y="total_bill")
