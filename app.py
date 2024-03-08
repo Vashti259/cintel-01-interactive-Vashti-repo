@@ -2,7 +2,7 @@ import plotly.express as px
 from shiny.express import input, ui
 from shinywidgets import render_plotly
 
-ui.page_opts(title="Vashti's App", fillable=True)
+ui.page_opts(title="Vashti's App A Bill", fillable=True)
 with ui.layout_columns():
 
     @render_plotly
